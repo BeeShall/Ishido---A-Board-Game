@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\board.txt",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\board.txt"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\test2.txt",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\test2.txt"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\test4.txt",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\test4.txt"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\case3",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\case3"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\case4",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\case4"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\case2",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\case2"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\test1.txt",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\test1.txt"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Ishido\\app\\build\\intermediates\\res\\merged\\debug\\raw\\test3.txt",
+        "source": "D:\\AndroidStudioProjects\\Ishido\\app\\src\\main\\res\\raw\\test3.txt"
+    }
+]
