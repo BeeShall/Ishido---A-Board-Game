@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Ishido</string>
+    <string name="action_settings">Settings</string>
+    <string name="playButtonText">PLAY</string>
+    <string name="randomText">Random</string>
+    <string name="selectedText">Selected</string>
+    <string name="scoreText">Score: </string>
+    <string name="expectedTile">Next Tile:</string>
+    <string name="resetText">Reset</string>
+    <string-array name="modes">
+        <item>Selected</item>
+        <item>Random</item>
+    </string-array>
+    <string-array name="searches">
+        <item>Depth-first</item>
+        <item>Breadth-first</item>
+        <item>Best-first</item>
+        <item>Branch and Bound</item>
+    </string-array>
+</resources>
