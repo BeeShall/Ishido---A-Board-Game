@@ -28,42 +28,61 @@ Each player (human user and computer) is dealt a tile with which to play his/her
 <h1>
 <a id="rules" class="anchor" href="#rules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rules</h1>
 
-<p>They may not place the tile adjacent to (left/right/above/below) another tile unless either the color or the symbol of the two tiles match. If the tile does not match any tile already on the board, it must be placed in a square not adjacent to any other tile on the board.
-The player earns as many points as the number of adjacent tiles with which his/her tile matches. Note that that number of points could be 0 (no match) to 4 (the tile matches the tiles to the left, right, above and below it.)
-The game ends when all the tiles have been placed on the board, or when a player cannot place a tile anywhere on the board without violating the rules of the game. The player with the highest score is said to win the game.</p>
+<p>They may not place the tile adjacent to (left/right/above/below) another tile unless either the color or the symbol of the two tiles match. If the tile does not match any tile already on the board, it must be placed in a square not adjacent to any other tile on the board.</p>
+
+<p>The player earns as many points as the number of adjacent tiles with which his/her tile matches. Note that that number of points could be 0 (no match) to 4 (the tile matches the tiles to the left, right, above and below it.)</p>
+
+<p>The game ends when all the tiles have been placed on the board, or when a player cannot place a tile anywhere on the board without violating the rules of the game. The player with the highest score is said to win the game.</p>
 
 <h1>
 <a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h1>
 
-<p>Two players play the game - the human user and the computer.
-When a fresh game is started, the first player is determined using a coin toss. The human player is asked to call the coin toss - head or tail. If the human player calls correctly, the player plays first. Otherwise, the computer plays first.
-On his/her turn, each player plays the next tile on top of the stock.
-The computer plays to win. In order to do so, it uses minimax, with or without alpha-beta pruning (to the selected ply) to determine its next move.
-Human player should be able to ask for help from your program on each move. When asked, the program uses its own algorithm to suggest the best next move for the human player.
-The program is able to both load a game from a text file and save a game to a text file.
-The program 
-The format for serialization is as follows:
-00 00 00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00 00 00
-00 00 00 00 12 13 00 00 00 00 00 00
-00 00 00 00 13 23 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00 00 00</p>
+<p>Two players play the game - the human user and the computer.</p>
 
-<p>Stock:
-11 23 32 44 45 62 35 43 ...</p>
+<p>When a fresh game is started, the first player is determined using a coin toss. The human player is asked to call the coin toss - head or tail. If the human player calls correctly, the player plays first. Otherwise, the computer plays first.
+On his/her turn, each player plays the next tile on top of the stock.</p>
 
-<p>Human Score:
-3</p>
+<p>The computer plays to win. In order to do so, it uses minimax, with or without alpha-beta pruning (to the selected ply) to determine its next move.</p>
 
-<p>Computer Score:
-5</p>
+<p>Human player should be able to ask for help from your program on each move. When asked, the program uses its own algorithm to suggest the best next move for the human player.</p>
 
-<p>Next Player:
-Human
-The above state corresponds to a board of 8 rows and 12 columns, with 4 tiles placed on it. Each tile is represented by 2 numbers [1..6][1..6]: The first number specifies the color (one of 6) and the second number specifies the shape (1 of 6). You can use any 6 colors and shapes as long as you consistently map each first number to the same color and each second number to the same shape. 
+<p>The program is able to both load a game from a text file and save a game to a text file.</p>
+
+<p>The format for serialization is as follows:</p>
+
+<p>00 00 00 00 00 00 00 00 00 00 00 00</p>
+
+<p>00 00 00 00 00 00 00 00 00 00 00 00</p>
+
+<p>00 00 00 00 00 00 00 00 00 00 00 00</p>
+
+<p>00 00 00 00 12 13 00 00 00 00 00 00</p>
+
+<p>00 00 00 00 13 23 00 00 00 00 00 00</p>
+
+<p>00 00 00 00 00 00 00 00 00 00 00 00</p>
+
+<p>00 00 00 00 00 00 00 00 00 00 00 00</p>
+
+<p>00 00 00 00 00 00 00 00 00 00 00 00</p>
+
+<p>Stock:</p>
+
+<p>11 23 32 44 45 62 35 43 ...</p>
+
+<p>Human Score:</p>
+
+<p>3</p>
+
+<p>Computer Score:</p>
+
+<p>5</p>
+
+<p>Next Player:</p>
+
+<p>Human</p>
+
+<p>The above state corresponds to a board of 8 rows and 12 columns, with 4 tiles placed on it. Each tile is represented by 2 numbers [1..6][1..6]: The first number specifies the color (one of 6) and the second number specifies the shape (1 of 6). You can use any 6 colors and shapes as long as you consistently map each first number to the same color and each second number to the same shape. 
 The stock contains the tiles in order: the first tile (11) is at the top of the stock. The score of the player so far is also listed (3).</p>
 
       <footer class="site-footer">
